@@ -1,0 +1,27 @@
+//moving averages 20 50 100 200
+
+//@version=5
+indicator("Rico 1.2")
+
+ma1= ta.sma(close,20)
+ma2= ta.sma(close,50)
+ma3= ta.sma(close,100)
+ma4= ta.sma(close,200)
+
+plot(ma1, color=color.fuchsia)
+plot(ma2, color=color.orange)
+plot(ma3, color=color.green)
+plot(ma4, color=color.blue)
+---
+//@version=5
+indicator("Rico 1.2")
+
+ma1= ta.sma(math.avg(close, open),20)
+ma2= ta.sma(math.avg(close, open),50)
+ma3= ta.sma(math.avg(close, open),100)
+ma4= ta.sma(math.avg(close, open),200)
+
+plot(ma1, color=color.fuchsia)
+plot(ma2, color=color.orange)
+plot(ma3, color=color.green)
+plot(ma4, color=color.blue)
