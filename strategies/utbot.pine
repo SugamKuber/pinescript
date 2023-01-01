@@ -1,7 +1,6 @@
 //@version=4
 
 study(title="b1.1", overlay = true)
-//CREDITS to HPotter for the orginal code. The guy trying to sell this as his own is a scammer lol. 
 src = close 
  
 keyvalue = input(3, title = "Key Vaule. 'This changes the sensitivity'", step = .5)
